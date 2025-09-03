@@ -15,7 +15,7 @@ def webhook():
     text = data.get("text", "").lower()
 
     if "league info" in text:
-        send_message("Here’s the info: https://docs.google.com/spreadsheets/d/1KWEgkyaAIMJ1DCkkSpQ65ZzELJGEjvw0Hr_LcMQgL5E/edit?usp=sharing
+        send_message('''Here’s the info: https://docs.google.com/spreadsheets/d/1KWEgkyaAIMJ1DCkkSpQ65ZzELJGEjvw0Hr_LcMQgL5E/edit?usp=sharing
         
                      Description	Answer
 Buy-In	$50
@@ -26,7 +26,7 @@ Undrafted Keeper Cost	Manager's first undrafted kept is 13th round, 2nd 12th rou
 Dropped Keeper Cost	Same as original draft round
 Draft Order	Randomized Snake Draft
 Draft time	
-IR spots	2")
+IR spots	2''')
 
     return "ok", 200
 
