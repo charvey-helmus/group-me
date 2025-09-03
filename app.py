@@ -15,7 +15,7 @@ def webhook():
     text = data.get("text", "").lower()
 
     if "league info" in text:
-        send_message("Here’s the league info: https://docs.google.com/spreadsheets/d/1KWEgkyaAIMJ1DCkkSpQ65ZzELJGEjvw0Hr_LcMQgL5E/edit?usp=sharing
+        send_message("Here’s the info: https://docs.google.com/spreadsheets/d/1KWEgkyaAIMJ1DCkkSpQ65ZzELJGEjvw0Hr_LcMQgL5E/edit?usp=sharing
         
                      Description	Answer
 Buy-In	$50
