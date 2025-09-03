@@ -15,7 +15,18 @@ def webhook():
     text = data.get("text", "").lower()
 
     if "league info" in text:
-        send_message("Here’s the league info: [insert link or details here]")
+        send_message("Here’s the league info: https://docs.google.com/spreadsheets/d/1KWEgkyaAIMJ1DCkkSpQ65ZzELJGEjvw0Hr_LcMQgL5E/edit?usp=sharing
+        
+                     Description	Answer
+Buy-In	$50
+Pay-Out	1=400, 2=150, 3 =50
+Number Keepers	2
+Keeper Cost	Ascending Cost (1st time kept same as original draft cost, then up 2 each subsequent year)
+Undrafted Keeper Cost	Manager's first undrafted kept is 13th round, 2nd 12th round, 3rd 11th round, etc.
+Dropped Keeper Cost	Same as original draft round
+Draft Order	Randomized Snake Draft
+Draft time	
+IR spots	2")
 
     return "ok", 200
 
